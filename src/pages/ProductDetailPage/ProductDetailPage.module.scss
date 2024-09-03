@@ -1,0 +1,93 @@
+@import "../../styles/variables"; 
+.container {
+    // background-color: #fff;
+    width: calc(70% + 80px);
+    height: 100%;
+    margin: 0 auto;
+}
+
+.loaderContainer {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageContainer {
+    width: 100%;
+}
+
+.content {
+    padding: 40px;
+    background-color: white;
+}
+
+.productsContainer {
+    border-radius: 4px;
+    width: 100%;
+
+    border-radius: 5px;
+    display: flex;
+    gap: 25px;
+}
+
+.image {
+    width: 680px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.button {
+background-color: $button-color;
+color: white;
+height: 35px;
+border-radius: 5px;
+border: none;
+margin: 1rem 0;
+cursor: pointer;
+}
+
+.descriptionTitle {
+    font-size: 28px;
+}
+
+.paragraph {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 1200px){
+.image {
+    min-width: 100%;
+}
+
+.productsContainer {
+    border-radius: 4px;
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+}
+
+@media screen and (max-width: 630px){
+    .image {
+        width: 100%;
+        min-width: 100%;
+    }
+    
+    .productsContainer {
+        border-radius: 4px;
+        width: 100%;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    }
